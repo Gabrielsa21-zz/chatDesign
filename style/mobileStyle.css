@@ -1,0 +1,131 @@
+#container {
+    display: grid;
+    /* grid-template-columns: auto; */
+    grid-template-rows: 10vh 80vh 10vh;
+}   
+
+#container-form {
+    background-color: #54585A;   
+    display: inline-flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#container-box {
+    /* grid-row-start: 2; */
+}
+
+#messages {
+    height: 80%; 
+    overflow-y: scroll;
+    margin: 40% 0 30% -50%
+}
+
+form {
+    width: 100%;
+    display: flex;
+}
+
+button {
+    width: 20%;
+    margin: 5px;
+   
+}
+
+
+textarea {
+    width: 100%;
+    margin: 5px; 
+    resize: none;
+
+} 
+
+#gridbnt {
+    width: 20%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+}
+
+
+#gridbnt button {
+    width: 100%;
+}
+
+.coleft {
+    background-color: #243741;
+    grid-row-start: 1;
+    width: 100vw;
+}
+
+.coleft picture img{
+    margin: 5%;
+    width: 20%;
+}
+
+#box {
+    width: auto;
+    height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-container-out {
+    border-radius: 10px;
+    align-self: flex-end;
+    background-color: blue;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(167, 169, 197, .55);
+    max-width: 50%;
+    padding: 8px;
+    position: relative;
+    margin-right: 15px; 
+    height: fit-content;
+    float: right;
+    margin-top: 10px;
+    word-break: break-all;
+}
+
+.message-container-out:after{
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    bottom: auto;
+    align-self: flex-end;
+    right: -10px;
+    border: 10px solid;
+    border-color: blue transparent transparent;
+}
+
+.message-container-in {
+    border-radius: 10px;
+    align-self: flex-start;
+    background-color: lightgray;
+    color: #000;
+    box-shadow: 0 2px 4px 0 rgba(167, 169, 197, .55);
+    max-width: 50%;
+    padding: 8px;
+    position: relative;
+    margin-left: 15px; 
+    height: fit-content;
+    float: right;
+    margin-top: 10px;
+    word-break: break-all;
+}
+
+.message-container-in:after {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    bottom: auto;
+    left: -10px;
+    border: 10px solid;
+    border-color: lightgray transparent transparent;
+}
